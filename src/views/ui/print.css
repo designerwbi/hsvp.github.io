@@ -1,0 +1,22 @@
+.form-head h4{
+    position: relative;
+    padding: 2px;
+    margin-top: 10px;
+}
+.form-head h4::after
+{
+    content: ' ';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    left: 0;
+    background-color: #1273de;
+    bottom: 0;
+}
+@media print{ 
+    body, html, #page-container, .scrollable-page, .ps, .panel {
+        height: 100% !important;
+        width: 100% !important;
+        display: inline-block;
+    }
+}
